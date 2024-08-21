@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Document</title>
+    <style>
+        header {
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+
+        nav {
+            height: 665px;
+        }
+
+        .header-1 {
+            height: 75px;
+            background-color: rgb(44, 88, 139);
+        }
+
+        .header-2 {
+            height: 75px;
+            background-color: rgb(93, 155, 226);
+
+        }
+
+        .logo {
+            font-size: 30px;
+            color: white;
+            margin-left: 50px;
+            position: absolute;
+            left: 25px;
+            top: 10px;
+
+
+        }
+
+        .guestuser {
+            height: 85px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+
+
+        }
+
+        .guestuser:hover {
+            height: 85px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(56, 53, 53);
+
+
+
+        }
+
+        .guestuser img {
+            height: 80px;
+            width: 85px;
+            margin: 5px;
+            border-radius: 30px;
+
+        }
+        .clickable{
+            font-size: 15px;
+            margin-left: 25px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            padding: 15px;
+            width: 80%;            
+            color: white;
+        }
+        .clickable:hover{
+            width: 80%;
+
+            font-size: 15px;
+            margin-left: 25px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            background-color: rgb(56, 53, 53);
+
+            
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        iframe{
+            height: 95%;
+            width: 96%;
+            margin: 1%;
+            overflow: hidden;
+           
+        }
+        main{
+            height: 665px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-1">
+
+            <span class="logo"><b>Magnus</b></span>
+        </div>
+        <div class="header-2">
+            <a href="" style="margin-left: 1130px ;"><button class="btn text-white"><span
+                        class="bi bi-box-arrow-right"></span>LOGOUT</button></a>
+
+        </div>
+    </header>
+    <section>
+        <nav class="bg-dark">
+
+            <div class="guestuser">
+                <div>
+                    <img src="free-person-icon-3.jpg" alt="">
+                </div>
+                <div>
+                    <h4 style="color: white; margin: 5px;"> Guest User</h4> <br>
+                    <h6 style="color: white; margin-top: -20px;"><span class="bi bi-person"></span>User</h6>
+                </div>
+
+            </div>
+            <div class="clickable">
+               <a href=""> <span class="bi bi-house-door-fill" style="color: white;"></span> &nbsp; <span>Home</span>
+               </a>
+
+            </div>
+            <div class="clickable">
+                <span class="bi bi-person-walking" style="color: white;"></span> &nbsp; <span>Employee</span>
+
+
+            </div>
+            <div class="clickable">
+                <span class="bi bi-three-dots-vertical" style="color: white;"></span> &nbsp; <span>More</span>
+
+
+            </div>
+            <div>
+                <a href="Employee-Create.html"  target="myframe"><button class="btn btn-info ms-4 text-white btn-sm">CREATE</button></a>
+                <a href="Employee-Search.html" target="myframe"><button class="btn btn-info ms-4 text-white btn-sm">SEARCH</button></a>
+
+                
+            <div class="clickable">
+                <span class="bi bi-gear-fill" style="color: white;"></span> &nbsp; <span>Setting</span>
+
+
+            </div>
+
+
+        </nav>
+        <main>
+          <iframe name="myframe" src="welcomepage.html"></iframe>
+        </main>
+    </section>
+
+</body>
+
+</html>
